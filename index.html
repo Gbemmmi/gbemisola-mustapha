@@ -1,71 +1,253 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mustapha Gbemisola Rhodiyat | Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Oluwagbemisola Mustapha | Health Data Scientist</title>
+  <style>
+    :root {
+      --primary: #1f7a8c;
+      --secondary: #022b3a;
+      --accent: #bfdbf7;
+      --text: #1c1c1c;
+      --bg: #f8f9fa;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    header {
+      background: var(--secondary);
+      color: white;
+      padding: 3rem 1rem;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.2rem;
+    }
+
+    header p {
+      margin-top: 0.5rem;
+      font-size: 1.1rem;
+      color: var(--accent);
+    }
+
+    nav {
+      background: white;
+      padding: 1rem;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      border-bottom: 1px solid #ddd;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: var(--secondary);
+      font-weight: bold;
+    }
+
+    section {
+      max-width: 1000px;
+      margin: 3rem auto;
+      padding: 0 1.5rem;
+    }
+
+    section h2 {
+      color: var(--secondary);
+      margin-bottom: 1rem;
+      font-size: 1.8rem;
+    }
+
+    .about {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      gap: 2rem;
+      align-items: center;
+    }
+
+    .about img {
+      width: 100%;
+      border-radius: 12px;
+    }
+
+    .about-text p {
+      margin-bottom: 1rem;
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+    }
+
+    .card {
+      background: white;
+      padding: 1.5rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    }
+
+    .card h3 {
+      margin-bottom: 0.5rem;
+      color: var(--primary);
+    }
+
+    .card p {
+      font-size: 0.95rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .meta {
+      font-size: 0.85rem;
+      color: #555;
+    }
+
+    .skills ul {
+      list-style: disc;
+      margin-left: 1.5rem;
+    }
+
+    .video-placeholder {
+      background: #e9ecef;
+      border: 2px dashed #ccc;
+      border-radius: 12px;
+      padding: 3rem 1rem;
+      text-align: center;
+      color: #666;
+    }
+
+    footer {
+      background: var(--secondary);
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+      margin-top: 4rem;
+    }
+
+    footer a {
+      color: var(--accent);
+      text-decoration: none;
+      margin: 0 0.5rem;
+    }
+
+    @media (max-width: 768px) {
+      .about {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
 </head>
 <body>
 
-    <!-- Header Section -->
-    <header class="hero">
-        <h1>Mustapha Gbemisola Rhodiyat</h1>
-        <p class="tagline">Data Science Enthusiast | Public Health & Health Data Analytics</p>
-    </header>
-    <!-- This section displays the full name and professional tagline (mandatory requirement) -->
+  <header>
+    <h1>Oluwagbemisola Mustapha</h1>
+    <p>Data Science for Health & Social Impact</p>
+  </header>
 
-    <!-- About Section -->
-    <section class="section">
-        <h2>About Me</h2>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#mission">Mission</a>
+    <a href="#projects">Portfolio</a>
+    <a href="#skills">Skills</a>
+    <a href="#elevator">Elevator Pitch</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <div class="about">
+      <img src="profile.jpg" alt="Professional Photo" />
+      <div class="about-text">
         <p>
-            I am a Public Health professional and aspiring Data Scientist with a strong interest
-            in using data to drive evidence-based decisions, particularly in healthcare and
-            development settings. I enjoy working with data to uncover insights that support
-            research, policy formulation, and program improvement.
+          I am a Data Science enthusiast with a strong foundation in pharmacology, public health, and healthcare program implementation. My academic and professional experiences have shown me how critical high-quality data and timely insights are to improving health outcomes, shaping effective policy, and optimizing healthcare delivery, particularly in low-resource settings.
         </p>
-    </section>
-    <!-- This section introduces the individual and explains their professional background -->
+        <p>
+          My work in HIV/AIDS programs and health data monitoring has strengthened my commitment to advancing Good Health and Well-Being by addressing gaps in data-driven decision-making across healthcare systems.
+        </p>
+      </div>
+    </div>
+  </section>
 
-    <!-- Skills Section -->
-    <section class="section">
-        <h2>Skills & Tools</h2>
-        <ul class="skills">
-            <li>Python</li>
-            <li>SQL</li>
-            <li>Excel</li>
-            <li>Power BI</li>
-            <li>Tableau</li>
-            <li>Data Cleaning & Visualization</li>
-            <li>Basic Machine Learning</li>
-        </ul>
-    </section>
-    <!-- This section lists key technical skills and tools -->
+  <section id="mission">
+    <h2>Mission & Focus</h2>
+    <p>
+      I am deeply aligned with the United Nations Sustainable Development Goal 3: Good Health and Well-Being. My passion lies in leveraging data science to improve access, efficiency, and equity in healthcare delivery, especially for underserved and low-resource communities.
+    </p>
+    <p>
+      Through health analytics, predictive modeling, and evidence-based decision-making, I aim to support better clinical, operational, and policy decisions that lead to measurable improvements in public health outcomes.
+    </p>
+  </section>
 
-    <!-- Experience Section -->
-    <section class="section">
-        <h2>Experience & Exposure</h2>
-        <ul>
-            <li>Experience in data collection, monitoring, and reporting for public health programs</li>
-            <li>Real-time data monitoring and discrepancy tracking</li>
-            <li>Academic and practical exposure to data analysis in public health settings</li>
-        </ul>
-    </section>
-    <!-- This section highlights relevant experience and practical exposure -->
+  <section id="projects">
+    <h2>Portfolio</h2>
+    <div class="projects">
+      <div class="card">
+        <h3>Heart Disease Prediction System</h3>
+        <p>
+          Developed a machine learning system to predict heart disease risk using patient clinical data.
+        </p>
+        <p class="meta">
+          Focus areas: data preprocessing, feature selection, model evaluation, and interpretability for healthcare decision support.
+        </p>
+      </div>
+      <div class="card">
+        <h3>Health Data Monitoring Dashboard</h3>
+        <p>
+          Designed and maintained dashboards to monitor program performance and patient outcomes within HIV/AIDS interventions.
+        </p>
+        <p class="meta">
+          Impact: enabled data-driven operational insights and improved reporting for healthcare stakeholders.
+        </p>
+      </div>
+    </div>
+  </section>
 
-    <!-- Contact Section -->
-    <section class="section contact">
-        <h2>Contact</h2>
-        <p>Email: <a href="mailto:olabisimustapha27@gmail.com">olabisimustapha27@gmail.com</a></p>
-        <p>GitHub: <a href="https://github.com/gbemisola-mustapha" target="_blank">github.com/gbemisola-mustapha</a></p>
-    </section>
-    <!-- This section provides contact details and GitHub profile -->
+  <section id="skills" class="skills">
+    <h2>Core Skills</h2>
+    <ul>
+      <li>Python, SQL, and data analysis fundamentals</li>
+      <li>Statistical analysis and exploratory data analysis</li>
+      <li>Machine learning basics and predictive modeling</li>
+      <li>Health data analytics and monitoring</li>
+      <li>Data storytelling and communication for non-technical stakeholders</li>
+    </ul>
+  </section>
 
-    <!-- Footer -->
-    <footer>
-        <p>© 2025 Mustapha Gbemisola Rhodiyat</p>
-    </footer>
-    <!-- Footer for professionalism and completeness -->
+  <section id="elevator">
+    <h2>Elevator Pitch</h2>
+    <div class="video-placeholder">
+      <p><strong>Elevator Pitch Video Placeholder</strong></p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>
+      Interested in collaborating, learning more about my work, or discussing opportunities in health-focused data science?
+    </p>
+    <p>
+      <a href="https://www.linkedin.com/in/oluwagbemisola-mustapha" target="_blank">LinkedIn</a>
+    </p>
+  </section>
+
+  <footer>
+    <p>
+      © 2025 Oluwagbemisola Mustapha | Data Science for Health & Social Impact
+    </p>
+  </footer>
 
 </body>
 </html>
